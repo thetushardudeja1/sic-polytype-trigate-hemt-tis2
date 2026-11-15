@@ -40,6 +40,8 @@ Threshold is defined at 1 mA/mm. DIBL uses drain biases of 0.5 and 7 V. The mini
 
 [DC metrics](phaseN01/METRICS_N01.json) · [RF bias points and results](rf/RF_RESULTS.csv)
 
+### Calibration and transfer curves
+
 ![Planar fit and 250 nm transfer curves](figures/dc_results.png)
 
 *Left: simulated output curves (lines) and sampled digitized measurements (open markers). Right: transfer curves at 0.5 and 7 V, with the 1 mA/mm threshold criterion marked. Currents below the extraction floor are omitted.*
@@ -57,6 +59,10 @@ Threshold is defined at 1 mA/mm. DIBL uses drain biases of 0.5 and 7 V. The mini
 The high-drain tri-gate current changes by about 0.7% under mesh refinement. Normalized to the full 180 nm fin pitch, its nominal current at 2 V overdrive is 32.83 mA/mm of footprint.
 
 ### RF bias sweep at 7 V drain bias
+
+![Simulated cutoff and maximum oscillation frequencies versus gate overdrive](figures/rf_bias_curves.png)
+
+*The lines connect the three simulated bias points for each 250 nm device.*
 
 | Device | Overdrive (V) | Current (mA/mm) | Transconductance (mS/mm) | Gate capacitance (fF/µm) | Current-gain cutoff (GHz) | Maximum oscillation frequency (GHz) |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
