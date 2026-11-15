@@ -1,0 +1,19 @@
+Material="SiliconCarbide" {
+  # 3C-SiC: Arvanitopoulos et al. 2017 (DEMPED) set; alpha 6e-4 (printed 6e-3 inconsistent); hole mumax 30 = Sazawa Hall
+  Epsilon { epsilon = 9.72 }
+  Bandgap { Tpar = 0.0  Chi0 = 3.83  Bgn2Chi = 0.5  Eg0 = 2.39  alpha = 6.0e-4  beta = 1200 }
+  eDOSMass { Formula = 2  Nc300 = 1.559e19 }
+  hDOSMass { Formula = 2  Nv300 = 1.159e19 }
+  ConstantMobility { mumax = 621.9, 30.0  Exponent = 2.5, 2.5 }
+  DopingDependence { formula = 1, 1  mumin1 = 40.0, 15.0  mumin2 = 40.0, 15.0  Pc = 0.0, 0.0  Cr = 3.0e16, 3.0e16
+                     alpha = 0.8, 0.8  mu1 = 0.0, 0.0  Cs = 1.0e30, 1.0e30  beta = 2.0, 2.0 }
+  HighFieldDependence { beta0 = 1.251, 1.251  betaexp = 1.2, 1.2  vsat0 = 2.5e7, 2.5e7  vsatexp = 1.55, 1.55 }
+  Scharfetter { taumin = 0.0, 0.0  taumax = 2.5e-6, 0.5e-6  Nref = 3.0e17, 3.0e17  gamma = 0.3, 0.3  Talpha = 1.72, 1.72  Etrap = 0.0 }
+}
+Material="4HSiC" {
+  Insert="4HSiC.par"
+  Bandgap { Tpar = 0.0  Chi0 = 3.24  Bgn2Chi = 0.5  Eg0 = 3.285  alpha = 0.033  beta = 1.0e5 }
+}
+MaterialInterface="SiliconCarbide/4HSiC" { ThermionicEmission { Formula=1 } }
+Region="C3g" { ConstantMobility { mumax = 263.8, 30.0  Exponent = 2.5, 2.5 } }
+Material="AluminumOxide" { Epsilon { epsilon = 9.0 } }   # ALD Al2O3 (no library .par)

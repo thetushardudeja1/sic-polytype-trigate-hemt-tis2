@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+*.log
+*.out
+*.tdr
+.env
+.env.*
+*.pem
+*.key
+/calibration/fitC/results/NCH_METRICS.json

@@ -1,0 +1,31 @@
+* LOW-FIELD DRIFT-DIFFUSION REFERENCE EXTENSION, 300 K only.
+* ConstantMobility below extends the electrostatic candidate to continuity tests.
+* Mobility source: Li et al., Nanotechnology 29 (2018) 015204, Table 1, zero strain.
+* deformation-potential estimate; ideal monolayer; not measured mobility.
+* NOT a prediction of vertical vdW-junction conductance; interlayer coupling absent.
+* No doping-dependence, high-field, SRH, Auger, optical or thermal models enabled.
+* No temperature extrapolation is intended (Exponent=0 only fixes the 300 K test).
+* Ideal monolayer, HSE06+SOC SG15-SO; fixed ions; 300 K occupation only.
+* Effective thickness = 5.05228916 Angstrom, from finite-field slab fit.
+* Out-of-plane tensor axis must be assigned to the sheet normal in the deck.
+* Epsilon below deliberately represents ELECTRONIC response only.
+* Nc/Nv fit 2D sheet density at eta=-0.1 eV; limited to eta=-0.15..-0.05 eV.
+* TiS2 structural stability and full device calibration remain pending.
+* See the repository README for model scope and contact-study context.
+
+Epsilon { epsilon = 19.3929769335 }
+Epsilon_aniso { epsilon = 8.41820478606 }
+Bandgap {
+  Chi0 = 5.62067574889
+  Eg0 = 0.410362429925
+  alpha = 0
+  beta = 0
+  Tpar = 300
+}
+eDOSMass { Formula = 2  Nc300 = 4.3972000018e+20 }
+hDOSMass { Formula = 2  Nv300 = 3.19981575731e+19 }
+
+ConstantMobility {
+  mumax = 10, 530
+  Exponent = 0, 0
+}

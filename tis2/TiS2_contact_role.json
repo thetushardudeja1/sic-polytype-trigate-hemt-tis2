@@ -1,0 +1,18 @@
+{
+  "role": "conductive_ALD_1T_TiS2_contact_under_Au",
+  "source": "Yoon2024 DOI10.1021/acsami.3c18982",
+  "film_thickness_nm": 10,
+  "Au_thickness_nm": 40,
+  "measured_resistivity_ohm_m": 1.39e-05,
+  "derived_sheet_resistance_ohm_square": 1390,
+  "KPFM_work_function_eV": 4.33,
+  "measured_S_to_Ti_ratio_approx": 1.88,
+  "surface_chemistry_note": "XPS composition does not uniquely identify vacancy species; do not convert S deficiency directly into a defect concentration",
+  "Schottky_barrier_meV_reported": 8.54,
+  "barrier_scope": "effective extraction150-240K atVd1V, gate-dependent; not universal",
+  "single_contact_RcW_candidate_ohm_um": 7755,
+  "Rc_scope": "symmetric inference from reported minimum2RcW15510; bias/normalization not yet reconciled",
+  "semiconductor_TiS2_par_allowed": false,
+  "legacy_file": "TiS2.par is a pristine-monolayer semiconductor model. The metallic contact benchmark uses an effective boundary resistance.",
+  "interface_model_status": "Effective resistor boundary currently used; no microscopic interface model validated"
+}
